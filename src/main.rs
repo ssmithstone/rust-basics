@@ -11,8 +11,15 @@ fn main() {
         .read_line(&mut buffer)
         .expect("Failed to read line");
 
-    let res = buffer.trim().parse::<u32>().unwrap();
+    let res = buffer.trim().parse::<u32>();
+    let res = match res {
+        Ok(res) => res,
+        Err(error) => panic!("Error parsing {:?}" , error),
+    };
 
-    println!("User entered {}" , res);
+    let res2 : u32 = buffer.trim().parse().unwrap();
+    let res3 : u32 = buffer.trim().parse().expect("Error parsing ");
+
+    println!("User entered {} {} {}" , res , res2, res3);
 
 }
