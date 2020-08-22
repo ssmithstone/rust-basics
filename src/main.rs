@@ -11,8 +11,8 @@ fn main() {
         .read_line(&mut buffer)
         .expect("Failed to read line");
 
+    let res = buffer.trim().parse::<u32>().unwrap();
 
-    println!("User entered {}" , buffer);
-
+    println!("User entered {}" , res);
 
 }
