@@ -11,4 +11,12 @@ fn main() {
     println!("c = {}", c);
     c = 42;
     println!("c = {}", c);
+
+    let d = 123456789; // non typed variable
+    println!("d = {}" , d);
+    println!("size = {} bytes , 1 byte = 8 bits" , std::mem::size_of_val(&d));
+
+    let z:isize = 123; // size of the word/pointer
+    let size_of_z = std::mem::size_of_val(&z);
+    println!("z = {} , takes up {} bytes , {}-bit os" , z , size_of_z , size_of_z * 8);
 }
