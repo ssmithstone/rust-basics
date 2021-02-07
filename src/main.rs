@@ -4,11 +4,39 @@ mod sh;
 
 static Z:i32 = 123;
 
+fn if_statements(){
+
+    let temp = 35;
+    if temp > 30 {
+        println!("Hot outside");
+    }
+    else if temp < 10 {
+        println!("Wrap up it's cold")
+    }
+    else {
+        println!("just right");
+    }
+
+    let day = if temp > 20 { "sunny"} else { "cloudy"};
+    println!("day = {}" , day);
+
+    println!("it is {}" ,
+        if temp > 20 { "hot"} else if temp < 10 { "cold" } else { "ok"}
+    );
+
+    println!("it is {}" ,
+        if temp > 20 {
+            if temp > 30 { "very hot"} else { "hot "}
+        } else if temp < 10 { "cold" } else { "ok"}
+    )
+}
+
 fn main() {
     println!("Learning Programming Languages");
     println!("rust-basics");
 
-    sh::stack_and_heap();
+    if_statements();
+
 }
 
 fn _scope_and_shadowing() {
