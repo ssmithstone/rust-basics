@@ -1,11 +1,17 @@
+#![allow(dead_code)]
+
+mod sh;
+
+static Z:i32 = 123;
+
 fn main() {
     println!("Learning Programming Languages");
     println!("rust-basics");
 
-    scope_and_shadowing();
+    sh::stack_and_heap();
 }
 
-fn scope_and_shadowing() {
+fn _scope_and_shadowing() {
     let a = 123;
 
     {
