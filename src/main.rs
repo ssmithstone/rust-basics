@@ -2,6 +2,21 @@ fn main() {
     println!("Learning Programming Languages");
     println!("rust-basics");
 
+    scope_and_shadowing();
+}
+
+fn scope_and_shadowing() {
+    let a = 123;
+
+    {
+        let a = 777;
+        println!("inside , a = {}" , a);
+    }
+
+    println!("outside , a = {}", a);
+}
+
+fn _fundamental_data_types() {
     let a: u8 = 123; // bind a to value 123 8bits , 1byte. u = unsigned (positive number) , signed ( negative / positive )
     let b: i8 = -127; // signed 8bit value -127 - 128
 
@@ -19,4 +34,6 @@ fn main() {
     let z:isize = 123; // size of the word/pointer
     let size_of_z = std::mem::size_of_val(&z);
     println!("z = {} , takes up {} bytes , {}-bit os" , z , size_of_z , size_of_z * 8);
+
+
 }
