@@ -31,11 +31,19 @@ fn if_statements(){
     )
 }
 
+fn while_loop(){
+    let mut a = 10;
+    while a > 0 {
+        println!("Inside loop at {}" , a);
+        a -= 1;
+    }
+}
+
 fn main() {
     println!("Learning Programming Languages");
     println!("rust-basics");
 
-    if_statements();
+    while_loop();
 
 }
 
