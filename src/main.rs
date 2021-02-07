@@ -39,12 +39,17 @@ fn while_loop(){
     }
 }
 
+fn for_loop() {
+    for x in 1..11 {
+        println!("x = {}" , x);
+    }
+}
+
 fn main() {
     println!("Learning Programming Languages");
     println!("rust-basics");
 
-    while_loop();
-
+    for_loop();
 }
 
 fn _scope_and_shadowing() {
