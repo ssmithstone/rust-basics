@@ -8,6 +8,6 @@ mod tests {
 
     #[test]
     fn test_simple_string() {
-        assert_eq!(my_name(), "stephen");
+        assert_eq!(my_name(), "stephen smithstone");
     }
 }
