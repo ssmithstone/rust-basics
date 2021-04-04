@@ -1,5 +1,5 @@
 pub fn my_name() -> &'static str {
-    return "stephen smithstone";
+    return "joe bloc";
 }
 
 #[cfg(test)]
@@ -8,6 +8,6 @@ mod tests {
 
     #[test]
     fn test_simple_string() {
-        assert_eq!(my_name(), "stephen smithstone");
+        assert_eq!(my_name(), "joe bloc");
     }
 }
