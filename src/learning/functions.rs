@@ -3,17 +3,17 @@ fn no_params_no_return_type(){
 }
 
 fn copy_by_value_int(value : i32 ){
-    println!("Hello value {}" , value);
+    println!("value {}" , value);
 
 }
 
 fn copy_by_ref_strings(value: & String){
-    println!("Hello value {}" , *value);
+    println!("value {}" , *value);
 
 }
 
 fn copy_by_ref_str(value: &str){
-    println!("Hello value {}" , value);
+    println!("value {}" , value);
 }
 
 
